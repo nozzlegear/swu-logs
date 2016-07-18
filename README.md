@@ -22,13 +22,19 @@ import Client from "swu-logs";
 const Client = require("swu-logs").default;
 ```
 
+Then, initialize the client:
+
+```js
+const client = new Client(apiKey)
+```
+
 ### List logs
 
 ```js
-const logs = await Client.list();
+const logs = await client.list();
 
 // Or use promises 
-Client.list().then((logs) => {
+client.list().then((logs) => {
 
 })
 ```
@@ -36,10 +42,10 @@ Client.list().then((logs) => {
 ### Get a single logs
 
 ```js
-const log = await Client.get(logId);
+const log = await client.get(logId);
 
 // Or use promises
-Client.get(logId).then((log) => {
+client.get(logId).then((log) => {
 
 })
 ```
@@ -47,10 +53,10 @@ Client.get(logId).then((log) => {
 ### Get events for a log
 
 ```js
-const events = await Client.getEvents(logId);
+const events = await client.getEvents(logId);
 
 // Or use promises
-Client.getEvents(logId).then((events) => {
+client.getEvents(logId).then((events) => {
 
 })
 ```
@@ -58,14 +64,14 @@ Client.getEvents(logId).then((events) => {
 ### Resend an email from a log
 
 ```js
-const result = await Client.resend(logId);
+const result = await client.resend(logId);
 
 if (result.success) {
     ...
 }
 
 // Or use promises
-Client.resend(logId).then((result) => {
+client.resend(logId).then((result) => {
     if (result.success) {
         ...
     }
