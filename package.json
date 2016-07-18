@@ -1,0 +1,35 @@
+{
+  "name": "swu-logs",
+  "version": "1.0.0",
+  "description": "A small library for interacting with the SendWIthUs Logs API.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nozzlegear/swu-logs.git"
+  },
+  "keywords": [
+    "sendwithus",
+    "swu",
+    "logs",
+    "email",
+    "email",
+    "logs"
+  ],
+  "author": "Joshua Harms <joshua@nozzlegear.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nozzlegear/swu-logs/issues"
+  },
+  "homepage": "https://github.com/nozzlegear/swu-logs#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "@types/jsuri": "^1.3.27",
+    "@types/node-fetch": "github:nozzlegear/node-fetch.d.ts#2cdc04a",
+    "jsuri": "^1.3.1",
+    "node-fetch": "^1.5.3"
+  }
+}
